@@ -23,7 +23,7 @@ Once done the plugin takes in a 'host' argument that needs to match that of your
 
 The real benefit here is you end up with no traffic downtime because if you cut off your LTM prior to draining your traffic and diverting it you will lose all the active connections/transactions at that moment in time.
 
-Feel free to fork this and use a seperate environment variable of your own if desired! Think of this environment variable as a marker tag for certain Kong Nodes/Clusters in your respective datacenters.
+Feel free to fork this and use a seperate environment variable of your own if desired! Think of SPLUNK_HOST environment variable as a marker tag for certain Kong Nodes/Clusters in your respective datacenters.
 
 ## Supported Kong Releases
 Kong >= 0.13.x 
