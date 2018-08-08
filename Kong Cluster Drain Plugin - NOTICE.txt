@@ -1,0 +1,26 @@
+Cluster Drain Plugin
+Copyright 2018 Optum
+
+
+Project Description:
+====================
+
+The Kong Cluster Drain Plugin is a small, lua-based, OpenResty Nginx module which enables draining of transactions through a specific Kong Cluster, most likely in a single datacenter. The purpose of this Cluster Drain plugin is to enable teams to reroute traffic to hit the other Kong Cluster without impacting real time transactions running on an existing cluster we intend to take offline briefly.
+
+
+
+Authors:
+Jeremy Justice, © Optum 2018
+
+
+Added Files:
+============
+
+
+
+
+
+
+
+Modified Files:
+===============
