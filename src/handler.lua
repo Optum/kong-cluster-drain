@@ -1,5 +1,4 @@
 local BasePlugin = require "kong.plugins.base_plugin"
-local responses = require "kong.tools.responses"
 local host = os.getenv("SPLUNK_HOST") --Ex: gateway-datacenter.company.com
 
 local ngx = ngx
@@ -7,7 +6,7 @@ local ngx = ngx
 local KongClusterDrain = BasePlugin:extend()
 
 KongClusterDrain.PRIORITY = 3 --The standard request termination plugin is 2 so we need to run before that and beat it out in priority.
-KongClusterDrain.VERSION = "1.0.0"
+KongClusterDrain.VERSION = "1.1.0"
 
 local function flush(ctx)
   ctx = ctx or ngx.ctx
@@ -36,7 +35,7 @@ function KongClusterDrain:access(conf)
     return
   end
 
-  return responses.send_HTTP_SERVICE_UNAVAILABLE()
+  return kong.response.exit(503, { message = "Scheduled Maintenance" })
  end
  
  return --If no match on host then just return
