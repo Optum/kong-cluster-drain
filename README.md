@@ -26,7 +26,7 @@ The real benefit here is you end up with no traffic downtime because if you cut 
 Feel free to fork this and use a seperate environment variable of your own if desired! Think of SPLUNK_HOST environment variable as a marker tag for certain Kong Nodes/Clusters in your respective datacenters.
 
 ## Supported Kong Releases
-Kong >= 0.13.x 
+Kong >= 1.x
 
 ## Installation
 Recommended:
