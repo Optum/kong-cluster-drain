@@ -1,6 +1,5 @@
 local BasePlugin = require "kong.plugins.base_plugin"
 local host = os.getenv("SPLUNK_HOST") --Ex: gateway-datacenter.company.com
-
 local ngx = ngx
 
 local KongClusterDrain = BasePlugin:extend()
