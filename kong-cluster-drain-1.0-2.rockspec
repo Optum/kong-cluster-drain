@@ -1,10 +1,10 @@
 package = "kong-cluster-drain"
-version = "1.0-1"
+version = "1.0-2"
 source = {
    url = "git+https://github.com/Optum/kong-cluster-drain.git"
 }
 description = {
-   summary = "Drain and divert your traffic without briging down the LTM and iterrupting existing traffic by a switch that allows failing your healthcheck to a datacenter.",
+   summary = "Drain and divert your traffic without bringing down the LTM and interrupting existing traffic by a switch that allows failing your healthcheck to a datacenter.",
    homepage = "https://github.com/Optum/kong-cluster-drain",
    license = "Apache 2.0"
 }
