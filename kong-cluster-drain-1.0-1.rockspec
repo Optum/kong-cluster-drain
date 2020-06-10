@@ -1,5 +1,5 @@
 package = "kong-cluster-drain"
-version = "0.2-1"
+version = "1.0-1"
 source = {
    url = "git+https://github.com/Optum/kong-cluster-drain.git"
 }
@@ -12,7 +12,7 @@ dependencies = {}
 build = {
    type = "builtin",
    modules = {
-      ["kong.plugins.kong-cluster-drain.handler"]  = "src/handler.lua",
-      ["kong.plugins.kong-cluster-drain.schema"]= "src/schema.lua"
+      ["kong.plugins.kong-cluster-drain.handler"] = "src/handler.lua",
+      ["kong.plugins.kong-cluster-drain.schema"] = "src/schema.lua"
    }
 }
