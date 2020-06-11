@@ -4,7 +4,7 @@ local kong = kong
 local KongClusterDrain = {}
 
 KongClusterDrain.PRIORITY = 3 --The standard request termination plugin is 2 so we need to run before that and beat it out in priority.
-KongClusterDrain.VERSION = "1.0"
+KongClusterDrain.VERSION = "1.1"
 
 function KongClusterDrain:access(conf)
  --If host has been set check if match and start throwing http status for maintenance
