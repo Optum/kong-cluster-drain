@@ -1,5 +1,5 @@
 package = "kong-cluster-drain"
-version = "1.1-2"
+version = "1.2-2"
 source = {
    url = "git+https://github.com/Optum/kong-cluster-drain.git"
 }

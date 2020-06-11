@@ -8,7 +8,7 @@ return {
     { config = {
         type = "record",
         fields = {
-          { hostname = {type = "string"}, },
+          { hostname = {type = "string", default = "default"}, },
     }, }, },
   },
 }
